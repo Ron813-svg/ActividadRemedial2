@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-
 const casinoSchema = new Schema({
   name: {
     type: String,
