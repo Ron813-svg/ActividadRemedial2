@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser'
 import casinoRoutes from './src/routes/casino.js'
 import clientesRoutes from './src/routes/clientes.js'
 import login from './src/routes/login.js'
+import registerRoutes from './src/routes/register.js'
 
 const corsOption = {
     origin: 'http://localhost:5173', 
@@ -28,5 +29,6 @@ app.use('/api/clientes', clientesRoutes)
 
 //LOGIN and REGISTER Routes:
 app.use('/api/login', login)
+app.use('/api/register', registerRoutes)
 
 export default app
